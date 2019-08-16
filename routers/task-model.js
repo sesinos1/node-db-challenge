@@ -6,12 +6,11 @@ module.exports = {
 };
 
 function getProjects() {
-  return projectDb("project");
+  return projectDb("task");
 }
 
 
 function add(postpro) {
-  console.log(postpro)
-  return projectDb('project')
+  return projectDb('task')
     .insert(postpro);
 }

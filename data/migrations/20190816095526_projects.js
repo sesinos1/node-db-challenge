@@ -12,7 +12,6 @@ exports.up = function(knex) {
         .notNullable();
       tbl
         .boolean("completed", 128)
-        .unique()
         .notNullable();
     })
     .createTable("resource", tbl => {
